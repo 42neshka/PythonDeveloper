@@ -1,6 +1,6 @@
 
-#!Список (Массив) [		] 
-#!Множество {		} set()
+#!Список (Массив) [		] list() могут повторяться значения
+#!Множество {		} set() повторений быть не может
 
 '''
 
@@ -42,7 +42,9 @@ dict = {
     'leg': 'нога'
 }
 
-.values() .keys()
+.values()   .keys()     for singer in favorite_songs.values():
+.update()   dict1.update(dict2)
+.items()    for song, performer in favorite_songs.items():
 
 '''
 
