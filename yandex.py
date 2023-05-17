@@ -48,6 +48,24 @@ dict = {
 
 .append(+ in end)   sleep_list.append('example')
 
+.split(указывается разделитель) сплитит в список (list) подходит для поиска
+words_list = poem_str.split(' ')
+.join(list)
+new_string = '-'.join(words_list)
 
 '''
 
+""" quote_1 = 'Работает? Не трогай'
+if '?' in quote_1:
+    q1 = quote_1.replace('?', ' и')
+    print(q1)
+
+Работает и Не трогай
+"""
+
+""" 
+
+
+
+
+"""
