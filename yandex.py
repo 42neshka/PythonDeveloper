@@ -46,5 +46,8 @@ dict = {
 .update()   dict1.update(dict2)
 .items()    for song, performer in favorite_songs.items():
 
+.append(+ in end)   sleep_list.append('example')
+
+
 '''
 
