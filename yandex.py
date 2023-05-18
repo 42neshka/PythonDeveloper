@@ -55,15 +55,24 @@ new_string = '-'.join(words_list)
 
 '''
 
-""" quote_1 = 'Работает? Не трогай'
+""" 
+quote_1 = 'Работает? Не трогай'
 if '?' in quote_1:
     q1 = quote_1.replace('?', ' и')
     print(q1)
 
 Работает и Не трогай
-"""
+ """
 
 """ 
+#! f Strings
+one_hundred = 100
+rubles = 'рублей'
+friends = 'друзей'
+print(f'Не имей {one_hundred} {rubles}, а имей {one_hundred} {friends}.')
+
+# А без применения f-строк тот же код выглядит похуже:
+print('Не имей ' + str(one_hundred) + ' ' + rubles + ', а имей ' + str(one_hundred) +' ' + friends + '.')
 
 
 

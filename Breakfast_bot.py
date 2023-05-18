@@ -10,8 +10,8 @@ toasts = True
 eggs = True
 bacon = True
 curd = True
-sour_cream = True
-banana = True
+sour_cream = False
+banana = False
 cheese = False
 
 '''
