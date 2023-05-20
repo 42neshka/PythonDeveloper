@@ -1,8 +1,19 @@
 
-#!Список (Массив) [		] list() могут повторяться значения
-#!Множество {		} set() повторений быть не может
+#! Коллекции
+''' 
 
+# Список (Массив) [		] list() могут повторяться значения
+# Множество {		} set() повторений быть не может, рандом порядок
+# Словари
+dict = {
+    'hand': 'рука',
+    'leg': 'нога'
+}
+
+print(dict['hand']) #рука
 '''
+
+''' #todo Пример использования команды set()
 
 songs_list = [
     'Мы к вам заехали на час',
@@ -31,31 +42,37 @@ print(unique_songs)
 print(len(unique_songs))
 '''
 
+''' #? объект.метод(аргумент) 
+
+Метод — это разновидность функции, мини-программа. Однако, в отличие от функций, метод применяется к объекту
+ .add(+) .union(объединение) .difference(-) .intersection(пересечение)  #* данные методы применяемы только к set (множествам != спискам)
 '''
-#!объект.метод(аргумент) 
-#!Метод — это разновидность функции, мини-программа. Однако, в отличие от функций, метод применяется к объекту
-#! .add(+) .union(объединение) .difference(-) .intersection(пересечение)
-
-#! Словари
-dict = {
-    'hand': 'рука',
-    'leg': 'нога'
-}
-
-.values()   .keys()     for singer in favorite_songs.values():
-.update()   dict1.update(dict2)
-.items()    for song, performer in favorite_songs.items():
-
+ 
+''' #? Методы для коллекций:
+.values()   .keys() #* для просмотра словаря
+for singer in favorite_songs.values(): #* перебор значений в цикле
+.update()   dict1.update(dict2) #* объединение двух словарей без переменной
+.items()    for song, performer in favorite_songs.items(): #* только через цикл
 .append(+ in end)   sleep_list.append('example')
-
 .split(указывается разделитель) сплитит в список (list) подходит для поиска
-words_list = poem_str.split(' ')
+#todo words_list = poem_str.split(' ')
 .join(list)
-new_string = '-'.join(words_list)
+#todo new_string = '-'.join(words_list)
 
 '''
 
-""" 
+""" #todo Пример создания словаря из 2 списков
+
+friends_names = ['Аня', 'Коля', 'Лёша', 'Лена', 'Миша']
+friends_cities = ['Владивосток', 'Красноярск', 'Москва', 'Обнинск', 'Чебоксары']
+
+friends =  {}
+
+for i in range(0, len(friends_names)):
+    friends[friends_names[i]] = friends_cities[i]
+"""
+
+""" #todo Пример использования метода .replace()
 quote_1 = 'Работает? Не трогай'
 if '?' in quote_1:
     q1 = quote_1.replace('?', ' и')
@@ -64,17 +81,50 @@ if '?' in quote_1:
 Работает и Не трогай
  """
 
-""" 
 #! f Strings
+
+""" #todo Пример использования f'strings
 one_hundred = 100
 rubles = 'рублей'
 friends = 'друзей'
 print(f'Не имей {one_hundred} {rubles}, а имей {one_hundred} {friends}.')
-
-# А без применения f-строк тот же код выглядит похуже:
+#* А без применения f-строк тот же код выглядит похуже:
 print('Не имей ' + str(one_hundred) + ' ' + rubles + ', а имей ' + str(one_hundred) +' ' + friends + '.')
+"""
 
+""" #todo Пример осуществления поиска в коллекциях
 
+sleep_list = [
+    'спать', 
+    'дрыхнуть', 
+    'кемарить',
+    'спать'
+] 
 
+sleep_set = {
+    'дрыхнуть', 
+    'спать', 
+    'кемарить'
+} 
+
+sleep_dict = {
+    'спать': 'дрыхнуть', 
+    'почивать': 'кемарить'
+}
+
+if 'дрыхнуть' in sleep_list:
+    print('В списке: нашлось!') 
+else:
+    print('В списке: не нашлось :(')
+
+if 'дрыхнуть' in sleep_set:
+    print('В сете: нашлось!') 
+else:
+    print('В сете: не нашлось :(')
+
+if 'дрыхнуть' in sleep_dict.values():
+    print('В словаре: нашлось!') 
+else:
+    print('В словаре: не нашлось :(')
 
 """
