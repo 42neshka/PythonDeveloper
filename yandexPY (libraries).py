@@ -18,4 +18,17 @@ f_time = city_time.strftime("%H:%M")
 choice() #* рандомит элементы списка
 randint() #* рандомит числа
 
+
+#! urllib.parse as 
+
+#? function:
+quote() #* codering
+unquote() #* uncodering
+
+
+#! request
+
+#? Методы 
+get() #* получиить ответ от сервера
+
 """
