@@ -48,3 +48,45 @@ Primary Key = unique + not null + index
 
 Внешние ключи
 Позволяет достигать целостности данных, выстраивать связи 
+
+Типы данных
+Числа
+integer int4 
+bigint int8
+real float4
+double precision float8
+numeric используется где требуется точность округления (для финансов)
+
+Символьные Типы
+character(n) char(n) фикс кол-во символов
+character varying(n) varchar(n) нефикс 
+text произвольной длины
+
+Спец типы данных
+json 
+jsonb хранит данные json в бинарном формате
+xml
+text[] массивы
+int[]
+
+Порядок запросов
+SELECT/ FROM/ JOIN ON/ WHERE/ GROUP BY/ WITH CUBE (WITH ROLLUP)/ HAVING/ ORDER BY/ LIMIT OFFFSET/
+
+Последовательность при выполнении
+FROM/ ON/ JOIN/ WHERE/ GROUP BY/ WITH CUBE (WITH ROLLUP)/ HAVING/ SELECT/ DISTINCT/ ORDER BY/ OFFSET/ LIMIT
+
+DDL
+data definition language
+группа операторов определения данных
+CREATE create database/view/table
+ALTER изменение ALTER create database/view/table
+DROP удаление
+
+DML
+data manipulation language
+группа операторов для манипуляции с даннымми
+SELECT выборка
+INSERT добавление новых данных
+UPDATE изменение в таблице
+DELETE удаление в таблице
+
