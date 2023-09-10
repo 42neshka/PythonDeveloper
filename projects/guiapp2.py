@@ -15,12 +15,12 @@ def Entry_button():
 
 def Delete_button():
     name.delete(0, 'end')
+    password.delete(0, 'end')
 
 def submit_button():
     print(name.get())
     print(password.get())
-    name.delete(0, 'end')
-    password.delete(0, 'end')
+    Delete_button()
 
 
 # labels
