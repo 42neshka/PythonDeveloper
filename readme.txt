@@ -1,2 +1,2 @@
-1. read me bitch
+1. read me
 2. keep your energy
